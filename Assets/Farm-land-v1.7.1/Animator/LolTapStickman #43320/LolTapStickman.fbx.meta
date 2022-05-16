@@ -6,7 +6,77 @@ ModelImporter:
   - first:
       74: -1633813329549799544
     second: LT_Bike_Right
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Base
+    second: {fileID: 2100000, guid: 2c02f03a652754c4ab3a6ab95840a53d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Default-Material
+    second: {fileID: 2100000, guid: 820626b195f214745a618c8f87b36aed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hat 1
+    second: {fileID: 2100000, guid: 849e6915d09859f4b8f0f877aac06185, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hat 2
+    second: {fileID: 2100000, guid: c28049193bb742243a03c6f6a849a751, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ScytheBase
+    second: {fileID: 2100000, guid: 673f3733c3e5c7c44a6782e495993523, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ScytheMetal
+    second: {fileID: 2100000, guid: 471bc89676eccfb45a011a57345e5773, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ScytheSecond
+    second: {fileID: 2100000, guid: b612f94b571ed164c8c950cd04b486b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SeedBag
+    second: {fileID: 2100000, guid: 9170867fe1405a5469e6ac4f53a6bb91, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SeedBagContent
+    second: {fileID: 2100000, guid: b2004d3ff63c6be4686da8e27d12a76f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SeedCup
+    second: {fileID: 2100000, guid: 575ef6e159242fb439e925d41a1c325d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WateringCanBase
+    second: {fileID: 2100000, guid: 78ddc451a8a484d45bd1d444f46f086e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WateringCanGold
+    second: {fileID: 2100000, guid: 5485a2d82b1e7aa4384f8678cb21a3e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WateringCanHole
+    second: {fileID: 2100000, guid: b1eadb63f560a874cada9e0cf5c8be29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WorkerMat
+    second: {fileID: 2100000, guid: 10c63722a32799b429ae91bcf35f5a93, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

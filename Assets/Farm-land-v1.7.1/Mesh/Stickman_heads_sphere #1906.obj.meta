@@ -3,7 +3,12 @@ guid: d84a1fb75c276924990863858aa194df
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stickman_heads_sphere_0Mat
+    second: {fileID: 2100000, guid: d3e58835c57ea1c41b918e4b60bdd4a6, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

@@ -3,7 +3,37 @@ guid: 3fd6e5cf4bda1be4e9b20093be97df5d
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Base
+    second: {fileID: 2100000, guid: ebbb0a332ab3c1d46b1480f773d0c169, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hat 1
+    second: {fileID: 2100000, guid: 5a26f5a1242cb65498549c62f6ad7be2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hat 2
+    second: {fileID: 2100000, guid: 317e965ea29b3dd469c0ac433f1961c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SeedBagContent
+    second: {fileID: 2100000, guid: 2a7ea66b22e6bb6478909d7ed32c3b99, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SeedCup
+    second: {fileID: 2100000, guid: 00df57caff681fc458626847f4b0fb24, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SuperPNJ
+    second: {fileID: 2100000, guid: 71d7af12f8a586b48b64f81e073e6360, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -23,7 +53,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -88,9 +118,9 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

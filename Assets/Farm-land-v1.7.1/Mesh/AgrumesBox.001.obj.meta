@@ -3,7 +3,12 @@ guid: c8edf31da4f84ad44be7e3fbba487fa5
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AgrumesBox.001_0Mat
+    second: {fileID: 2100000, guid: 128575ecd86999f45b6772c190790dfb, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

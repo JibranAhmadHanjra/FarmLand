@@ -3,7 +3,52 @@ guid: 6c551b91229097e4caa9ca8c19f004a8
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Base
+    second: {fileID: 2100000, guid: 73796cef9673ed74e9b76a9f2a5e4273, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hat 1
+    second: {fileID: 2100000, guid: de19d5f565aaa764b8ac44a3e0a7ab3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hat 2
+    second: {fileID: 2100000, guid: 324c56f8a01212d4f9ae1633f0e7cbb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MarchandBaseColor
+    second: {fileID: 2100000, guid: 6442efe443cb3e54097efbe2db914892, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MarchandSecondColor
+    second: {fileID: 2100000, guid: 9306a8a97f2a80a409912714637c2cf4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MarchantThirdColor
+    second: {fileID: 2100000, guid: b505c473101cbed49a7e218e4e6efdea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SeedBagContent
+    second: {fileID: 2100000, guid: 4216e28463b57004c9c72db1d30bde75, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SeedCup
+    second: {fileID: 2100000, guid: f153f5d6d65acc34ca18d2060a3ed1dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SuperPNJ
+    second: {fileID: 2100000, guid: 97b9111b40750154fa30bfc4b1178aa3, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -23,7 +68,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -88,9 +133,9 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
