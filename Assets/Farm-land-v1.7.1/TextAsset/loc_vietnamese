@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="BringMe"><b>Mang cho tôi:</b></string>
+    <string name="SellMe"><b>Bán cho tôi:</b></string>
+    <string name="XPercentCoins">+{0}% Xu</string>
+    <string name="XPercentBarnCollect">Thu thập +{0}% Kho</string>
+    <string name="BarnCapacity">Sức chứa của kho</string>
+    <string name="Buy">Thuê</string>
+    <string name="Buys">Mua:</string>
+    <string name="Collect">Thu thập</string>
+    <string name="DoYouLikeOurGame">Bạn có thích Farm Land không?</string>
+    <string name="NotifMsg">Bạn có muốn được thông báo khi cây, kho và thưởng khác có sẵn để thu thập không?</string>
+    <string name="EffectsStillActive">Hiệu ứng vẫn hoạt động</string>
+    <string name="FailedToReachServerPleaseTryAgain">Không kết nối được với máy chủ.\nXin vui lòng thử lại</string>
+    <string name="ForXHours">Trong {0} giờ</string>
+    <string name="Free">Miễn phí</string>
+    <string name="FreeRain">Mưa miễn phí</string>
+    <string name="GoTo">Đến</string>
+    <string name="GreatDeal">Ưu đãi\nTuyệt vời!</string>
+    <string name="CatDescription">Tăng lợi nhuận xu của người bán</string>
+    <string name="DogDescription">Tăng vật phẩm thu thập được từ kho</string>
+    <string name="InternetNeeded">Phải có internet</string>
+    <string name="IBuyAllYourInventory">Tôi mua tất cả tồn kho của bạn</string>
+    <string name="ICollectAllYourBarns">Tôi thu thập tất cả kho của bạn</string>
+    <string name="ITendAllYourAnimals">Tôi chăm sóc tất cả vật nuôi của bạn</string>
+    <string name="IPickAllYourFruits">Tôi hái tất cả trái ây của bạn</string>
+    <string name="LetsGrow">Trồng nào!</string>
+    <string name="Loading">Đang tải...</string>
+    <string name="LoseIt">Thua</string>
+    <string name="LvlX">Cđ {0}</string>
+    <string name="Maxed">Đã đạt tối đa</string>
+    <string name="MyBarnIsFull"><b>Kho</b> của tôi đã đầy!</string>
+    <string name="No">Không</string>
+    <string name="BundleDescription">Không còn quảng cáo video cho mưa và công cụ vàng</string>
+    <string name="UnlimitedPowerDescription">Không còn quảng cáo video cho công cụ vàng + không còn banner</string>
+    <string name="FreeRainDescription">Không còn quảng cáo ivideo khi mưa + không còn banner</string>
+    <string name="NoWorker">Không còn nhân viên</string>
+    <string name="Ok">Ok</string>
+    <string name="PetCat">+ Mèo cưng</string>
+    <string name="PetDog">+ Chó cưng</string>
+    <string name="PickMe">Chọn tôi!</string>
+    <string name="Play">Chơi</string>
+    <string name="PrivacySettings">Cài đặt Quyền riêng tư</string>
+    <string name="RestorePurchases">Khôi phục mua</string>
+    <string name="Settings">Cài đặt</string>
+    <string name="SuperBundle">Gói siêu cấp</string>
+    <string name="ThanksForYourPurchase">Cảm ơn bạn đã mua!</string>
+    <string name="Travel">Du lịch</string>
+    <string name="UnlimitedPower">Quyền không giới hạn</string>
+    <string name="Upgrade">Nâng cấp</string>
+    <string name="Yes">Có</string>
+    <string name="FullCaps">ĐẦY</string>
+    <string name="WorkerX">Nhân viên {0}</string>
+    <string name="SpeedX">Tốc độ: {0}</string>
+    <string name="CatBonusMsg">+{0}% xu</string>
+    <string name="DogBonusMsg">+{0}% kho</string>
+    <string name="MiniGameTreeMsg">Rung cây</string>
+    <string name="MiniGameCowMsg">Vắt sữa bò</string>
+    <string name="MiniGameFishMsg">Bắt cá</string>
+    <string name="MiniGameSheepMsg">Xén lông cừu</string>
+    <string name="Unlock">Mở khóa</string>
+    <string name="Upgrade">Nâng cấp</string>
+    <string name="New!">Mới!</string>
+    <string name="LevelUp!">Tăng cấp!</string>
+    <string name="TryPetForxHours">Dùng thử thú cưng thưởng trong {0} giờ.</string>
+    <string name="AdoptPet">Nhận nuôi thú cưng thưởng.</string>
+    <string name="X%Full">{0}% Đầy</string>
+    <string name="NotifTree1">Tất cả 🍎🍏 của bạn đã chín kỹ. Hãy đến hái chúng về nhé 👩‍🌾.</string>
+    <string name="NotifTree2">🌳 đã sẵn sàng để thu hái.|Hãy tìm 🍎🍒🍋🍊 thật ngon nhé.</string>
+    <string name="NotifTree3">🍎🍒🍋 của bạn đã sẵn sàng! Hãy làm smoothie nhé. 🧑‍🌾🥤</string>
+    <string name="NotifAnimal1">🐮🐣🐔|Vật nuôi của bạn cần được chăm sóc!</string>
+    <string name="NotifAnimal2">🐄🐑🐓 của bạn cần được chăm sóc.|Hãy đến thu hoạch 🥛🧶🥚 của bạn.</string>
+    <string name="NotifAnimal3">Bạn có 🥛?|🐮🐄 không thể tự vắt sữa được.</string>
+    <string name="NotifAnimal4">🐮🐔 của bạn đã sẵn sàng!Hãy đến thu hoạch vật thưởng! 🥛🥚</string>
+    <string name="NotifBarn1">👨‍🌾 Vụ mùa thật rực rỡ🌦️|Kho của bạn đã đầy! 💰</string>
+    <string name="NotifBarn2">🧑‍🌾 Nhân viên của bạn đã làm việc rất tốt!|Hãy đến thu thập kho của bạn. 🧺💵</string>
+    <string name="NotifBarn3">🌽🌻🍆🍅 đang chờ bạn.|Kho của bạn đã đầy.</string>
+    <string name="NotifBarn4">Đã đến lúc thu hoạch rồi! 🚜|Hãy đến thu thập kho của bạn 🍆🍅🍉.</string>
+    <string name="NotifBarn5">Đã đến lúc gặt những thứ bạn đã gieo! 🌾🌾🌾|Hãy đến làm trống kho của bạn nào. 🤑</string>
+    <string name="NotifBarn6">👨‍🌾 Xin chào đối tác!|Đã đến lúc thu hoạch kho của họ rồi. 🧺</string>
+    <string name="VIPTitle">VIP</string>
+    <string name="Bike">Xe đạp</string>
+    <string name="BikeMsg">Đến bất cứ nơi nào nhanh hơn!</string>
+    <string name="ParrotPet">Vẹt cưng</string>
+    <string name="ParrotMsg">Đi theo bạn đến mọi nơi thật phong cách</string>
+    <string name="NoAds">Không có quảng cáo</string>
+    <string name="Membership">Quyền thành viên</string>
+    <string name="StartForFree">Bắt đầu miễn phí</string>
+    <string name="SubscribeNow">Đăng ký ngay</string>
+    <string name="XDaysFreeTrialThen">{0} ngày miễn phí, sau đó</string>
+    <string name="Week">Tuần</string>
+    <string name="Month">Tháng</string>
+    <string name="PerMonth">mỗi THÁNG</string>
+    <string name="Year">Năm</string>
+    <string name="PerYear">mỗi NĂM</string>
+    <string name="SubscriptionTerms">Điều khoản đăng ký</string>
+    <string name="SubscriptionTermsMsg">Đây là đăng ký gia hạn tự động. Thanh toán sẽ được tính vào Tài khoản Google/iTunes khi xác nhận mua. Đăng ký tự động gia hạn trừ khi tự động gia hạn bị tắt ít nhất 24 giờ trước khi kết thúc giai đoạn hiện tại. Tài khoản sẽ được thu phí gia hạn trong vòng 24 giờ trước khi kết thúc giai đoạn hiện tại, và xác định chi phí gia hạn. Người dùng có thể quản lý đăng ký và tự động gia hạn có thể bị tắt bằng cách đến Cài đặt Tài khoản của người dùng sau khi mua. Thời gian dùng thử miễn phí chưa sử dụng còn lại, nếu được cung cấp, sẽ bị hủy bỏ khi người dùng mua đăng ký sản phẩm đó, nếu có thể.</string>
+    <string name="PrivacyPolicyAndTermsOfUse">Chính sách Quyền riêng tư và Điều khoản Sử dụng</string>
+    <string name="ExitMsg">Bạn có muốn thoát khỏi Farm Land không?</string>
+    <string name="RainPopUpFreeMsg">Mưa sẽ làm cho cánh đồng của bạn tươi tốt!</string>
+    <string name="RainPopUpMsg">Mưa sẽ giúp cho cánh đồng của bạn tươi tốt trong khi bạn xem video này.</string>
+    <string name="X%BarnCapacity">+{0}% sức chứa kho</string>
+    <string name="BigBarns">Kho lớn</string>
+    <string name="AllAnimalsAreOK">Tất cả các động vật đều tốt!</string>
+    <string name="PurchaseFailed">Mua không thành công. Vui lòng thử lại sau.</string>
+    <string name="NothingToRestore">Không có gì để khôi phục.</string>
+    <string name="FieldsNeeded">Các trường cần thiết</string>
+</resources>
