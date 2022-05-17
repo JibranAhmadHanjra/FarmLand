@@ -1,0 +1,497 @@
+
+using Test.TestObject;
+
+TestObject t = new TestObject();
+t.ta = new TestObject[4];
+
+for (int i = 0; i < t.ta.Length; i++)
+{
+    t.ta[i] = new TestObject();
+    t.ta[i].a = i + 1;
+}
+
+int sum = 0;
+
+foreach (TestObject to in t.ta)
+{
+    sum += to.a;
+}
+
+$result = sum.ToString();
+
+
+Console.WriteLine($result);
+
+EXPECT: "10"
+
+
+int a = 2;
+int b = 40;
+float f = 134.5;
+
+int j = 5 + b * a;
+
+$result = j.ToString() + " - " + Math.Sin(f + j);
+
+EXPECT: "85 - -0,399971500968216"
+
+int a = 150;
+int b = 40;
+
+$result = "";
+
+$result += (a + b).ToString() + " ";
+$result += (a - b).ToString() + " ";
+$result += (a * b).ToString() + " ";
+$result += (a / b).ToString() + " ";
+$result += (a & b).ToString() + " ";
+$result += (a | b).ToString() + " ";
+$result += (a % b).ToString() + " ";
+$result += (a >> 2).ToString() + " ";
+$result += (a << 2).ToString() + " ";
+$result += (~a).ToString() + " ";
+$result += (-a).ToString() + " ";
+$result += (a == b).ToString() + " ";
+$result += (a != b).ToString() + " ";
+$result += (a < b).ToString() + " ";
+$result += (a <= b).ToString() + " ";
+$result += (a > b).ToString() + " ";
+$result += (a >= b).ToString();
+
+
+Console.WriteLine($result);
+
+EXPECT: "190 110 6000 3 0 190 30 37 600 -151 -150 False True False False True True"
+
+
+float a = 135.3;
+float b = 28.7;
+
+$result = "";
+
+$result += (a + b).ToString("F2") + " ";
+$result += (a - b).ToString("F2") + " ";
+$result += (a * b).ToString("F2") + " ";
+$result += (a / b).ToString("F2") + " ";
+$result += (a % b).ToString("F2") + " ";
+$result += (-a).ToString("F2") + " ";
+$result += (a == b).ToString() + " ";
+$result += (a != b).ToString() + " ";
+$result += (a < b).ToString() + " ";
+$result += (a <= b).ToString() + " ";
+$result += (a > b).ToString() + " ";
+$result += (a >= b).ToString();
+
+
+Console.WriteLine($result);
+
+EXPECT: "164,00 106,60 3883,11 4,71 20,50 -135,30 False True False False True True"
+
+
+$result = "";
+
+for (int i = 0; i < 20; i += 3)
+{
+  for (int j = 0; j < 20; j += 4)
+  {
+      if (j > 0){ $result += "-"; };
+      $result += (i * j).ToString();
+  } 
+  $result += "/";
+} 
+
+Console.WriteLine($result);
+
+EXPECT: "0-0-0-0-0/0-12-24-36-48/0-24-48-72-96/0-36-72-108-144/0-48-96-144-192/0-60-120-180-240/0-72-144-216-288/"
+
+$result = "";
+int i = 1000;
+
+while (i > 20)
+{
+  $result += i + "/";
+  i = (i * 2)/3;
+} 
+
+Console.WriteLine($result);
+
+
+EXPECT: "1000/666/444/296/197/131/87/58/38/25/"
+
+
+$result = "";
+
+for (int i = 0; i < 20; i += 3)
+{
+  for (int j = 0; j < 20; j += 4)
+  {
+      if (j > 0){ $result += "-"; };
+      $result += (i * j).ToString();
+
+      if (j > i) break;
+  } 
+  $result += "/";
+} 
+
+Console.WriteLine($result);
+
+EXPECT: "0-0/0-12/0-24-48/0-36-72-108/0-48-96-144-192/0-60-120-180-240/0-72-144-216-288/"
+
+$result = "";
+
+for (int i = 0; i < 20; i += 4)
+{
+  for (int j = 0; j < 20; j += 4)
+  {
+      if (j == i) {continue;}
+
+      if (j > 0){ $result += "-"; };
+      $result += (i * j).ToString();
+  } 
+  $result += "/";
+} 
+
+Console.WriteLine($result);
+
+EXPECT: "-0-0-0-0/0-32-48-64/0-32-96-128/0-48-96-192/0-64-128-192/"
+
+
+using Test.TestStruct;
+using Test.TestEnum;
+
+TestStruct t = new TestStruct();
+TestStruct t2 = new TestStruct(5, 6, TestEnum.B);
+TestStruct t3 = t;
+
+t3.a = 45;
+t3.b = -2;
+
+$result = t.ToString() + t2.ToString() + t3.ToString();
+
+Console.WriteLine($result);
+
+EXPECT: "(0,0,0)(5,6,B)(45,-2,0)"
+
+
+using Test.TestStruct;
+
+TestStruct[] t = new TestStruct[10];
+
+for (int i = 0; i < t.Length; i++){t[i].a = i * i;}
+
+int sum = 0;
+
+for (int i = 0; i < t.Length; i++){sum += t[i].a;}
+
+int sum2 = 0;
+
+foreach (TestStruct st in t){sum2 += st.a;}
+
+$result = sum.ToString() + "/" + sum2.ToString() + "X";
+Console.WriteLine($result);
+
+EXPECT: "285/285X"
+
+float[,] table = new float[4, 4];
+
+for (int x = 0; x < 4; x++)
+{
+	for (int y = 0; y < 4; y++)
+	{
+		table[x,y] = Math.Sin((x + y) * 0.1);
+	} 
+} 
+
+$result = "";
+
+for (int x = 0; x < 4; x++)
+{
+	for (int y = 0; y < 4; y++)
+	{
+		if (y > 0) $result += "/";
+		$result += table[x,y].ToString("F2");
+	}
+	$result += "|";
+} 
+
+Console.WriteLine($result);
+
+EXPECT: "0,00/0,10/0,20/0,30|0,10/0,20/0,30/0,39|0,20/0,30/0,39/0,48|0,30/0,39/0,48/0,56|"
+
+
+$result = "";
+
+void foo(int i)
+{
+	if (i == 3)
+	{
+	   $result += "/3";
+	}
+	else if (i <= 4)
+	{
+		$result += "/A";
+	}
+	else
+	{
+		$result += "/B";
+	}
+}
+
+for (int i =0; i < 10; i++)
+{
+	foo(i);
+}
+
+Console.WriteLine($result);
+
+EXPECT: "/A/A/A/3/A/B/B/B/B/B"
+
+int fibo(int n)
+{
+	if (n >=2)
+	{
+		return fibo(n - 1) + fibo(n - 2);
+	}
+	else
+	{
+		if (n==0 || n==1)
+		{
+			return 1;
+		}
+	}
+}
+
+$result = fibo(10).ToString();
+
+Console.WriteLine($result);
+
+EXPECT: "89"
+
+$result = "";
+
+function append = (string app, bool ret) =>
+{
+   $result += app;
+   return ret;
+};
+
+bool A = append("A", true) && append("B", true);
+$result += A.ToString() + "|";
+
+A = append("A", false) && append("B", true);
+$result += A.ToString() + "|";
+
+A = append("A", true) || append("B", true);
+$result += A.ToString() + "|";
+
+A = append("A", false) || append("B", true);
+$result += A.ToString();
+
+
+Console.WriteLine($result);
+
+EXPECT: "ABTrue|AFalse|ATrue|ABTrue"
+
+$result = "";
+
+for (int i = 0; i < 8; i++)
+{
+    $result += (i % 3 == 0)? "X" : "-";
+}
+
+Console.WriteLine($result);
+
+EXPECT: "X--X--X-"
+
+$result = "";
+
+void append(int i)
+{
+	switch (i)
+	{
+	case 1:
+	   $result += "1";
+	   break;
+	case 2:
+	   $result += "2";
+	   break;
+	case 3:
+	   $result += "3";
+	case 4:
+	   $result += "4";
+	   break;
+	default:
+	   $result += "X";
+	}
+}
+
+for (int i = 0; i < 8; i++){append(i);}
+
+Console.WriteLine($result);
+
+EXPECT: "X12344XXX"
+
+using System.Collections.Generic.List;
+
+List<int> list = new List<int>();
+
+for (int i = 0; i < 40; i += 5)
+{
+   list.Add(i % 6);
+}
+
+$result = "";
+
+for (int i = 0; i < list.Count; i++)
+{
+	$result += list[i] + "/";
+}
+
+$result += "-";
+
+foreach (int i in list)
+{
+	$result += i + "/";
+}
+
+Console.WriteLine($result);
+
+EXPECT: "0/5/4/3/2/1/0/5/-0/5/4/3/2/1/0/5/"
+
+using System.Collections.Generic.List;
+using Test.TestStruct;
+
+List<TestStruct> t = new List<TestStruct>();
+
+for (int i = 0; i < 10; i++)
+{
+	t.Add(new TestStruct(i * i, i));
+}
+
+int sum = 0;
+
+for (int i = 0; i < t.Count; i++){sum += t[i].a;}
+
+int sum2 = 0;
+
+foreach (TestStruct st in t){sum2 += st.a;}
+
+$result = sum.ToString() + "/" + sum2.ToString();
+Console.WriteLine($result);
+
+EXPECT: "285/285"
+
+using System.Collections.Generic.Dictionary;
+
+Dictionary<int, string> dic = new Dictionary<int, string>();
+
+dic[5] = "Petit";
+dic[7] = "Papa";
+dic[14] = "Noël";
+
+$result = dic[5] + " " + dic[7] + " " + dic[14];
+
+Console.WriteLine($result);
+
+EXPECT: "Petit Papa Noël"
+
+int[] a = new int[]{10, 100, 1000};
+
+int[,] b = new int[,]{{3, 4, 5}, {6, 7, 8}, {9, 10, 11}};
+
+$result = "";
+
+for (int x = 0; x < 3; x++)
+{
+	for (int y = 0; y < 3; y++)
+	{
+          if (y > 0) $result += ";";
+	  $result += (b[x,y] + a[(x + y) % 3]).ToString();
+	}
+	
+	$result += "|";
+}
+
+Console.WriteLine($result);
+
+EXPECT: "13;104;1005|106;1007;18|1009;20;111|"
+
+using Test.TestObject;
+
+TestObject t = new TestObject();
+
+TestObject.StaticField = "AAA";
+TestObject.StaticProperty = "BBB";
+
+$result =  t.StaticBaseMethod() + ";" + TestObject.StaticBaseMethod() + ";" + TestObject.StaticMethod() + ";" + t.VirtualMethod() + ";" + t.foo(10, 12) + ";" + t.foo(10) + ";" + t.GenericMethod<int>() + ";" + t.GenericMethod<TestObject>() + ";" + TestObject.StaticField + ";" + TestObject.StaticProperty;
+
+Console.WriteLine($result);
+
+EXPECT: "TestObjectBase.StaticBaseMethod;TestObjectBase.StaticBaseMethod;TestObjectBase.StaticMethod;TestObject.VirtualMethod;22;44;System.Int32;Test.TestObject;AAA;BBB"
+
+
+using Test.TestObject;
+using Test.TestStruct;
+
+
+TestObject o1 = new TestObject();
+TestObject o2 = new TestObject();
+TestObject o3 = o1;
+
+TestStruct s1 = new TestStruct(1, 43);
+TestStruct s2 = new TestStruct(1, 43);
+TestStruct s3 = s1;
+TestStruct s4 = new TestStruct(2, 43);
+
+$result = (o1 == o2) + ";" + (o1 == o3)+ ";" + (s1 == s2) + ";" + (s1 == s3) + ";" + (s1 == s4);
+
+Console.WriteLine($result);
+
+
+EXPECT: "False;True;True;True;False"
+
+
+using System.DateTime;
+using System.TimeSpan;
+
+DateTime a = new DateTime(2019, 1, 29);
+DateTime b = new DateTime(2019, 4, 16);
+TimeSpan ts = a - b;
+
+HugeNumber u = 4000;
+u += 1000;
+
+$result = ts.ToString() + "/" + u;
+
+Console.WriteLine($result);
+
+
+EXPECT: "-77.00:00:00/5k"
+
+using Test.TestEnum;
+
+TestEnum a = TestEnum.A;
+TestEnum b = TestEnum.B;
+
+TestEnum c = a | b;
+
+$result = c.HasFlag(a) + ";" + b.HasFlag(a) + ";" + ((a & b) != 0) + ";" + ((a & c) != 0);
+
+Console.WriteLine($result);
+
+EXPECT: "True;False;False;True"
+
+object a = ((byte)234);
+
+$result = a + ";" + a.GetType() + ";" + typeof(int);
+
+Console.WriteLine($result);
+
+EXPECT: "234;System.Byte;System.Int32"
+
+
+
+
+
+
+
